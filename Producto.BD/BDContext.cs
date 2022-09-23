@@ -15,6 +15,11 @@ namespace Producto.BD
         {
         }
 
-        public DbSet<Productos> producto { get; set; }
+        public DbSet<Data.Entidades.Producto> Producto { get; set; }
+        public DbSet <Factura> Factura { get; set; }
+        public DbSet<Renglon> Renglon { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }    
+
+
     }
 }

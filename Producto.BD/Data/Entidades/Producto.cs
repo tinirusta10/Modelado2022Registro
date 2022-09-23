@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace Producto.BD.Data.Entidades
 {
-    public class Productos
+    public class Producto
     {
-        [Required]
-        public int id { get; set; }
+        public int Id { get; set; }
         [Required]
         public string NombreProducto { get; set; }
         [Required]
@@ -19,14 +18,9 @@ namespace Producto.BD.Data.Entidades
         public int CodigoProducto { get; set; }
         [Required]
         public int Stock { get; set; }
-        [Required]
-        public string NombreCliente { get; set; }
-        [Required]
-        public string ApellidoCliente { get; set; }
-        [Required]
-        public DateTime FechaVenta { get; set; }
 
 
+        public List<Renglon> Renglones { get; set; }
 
     }
 }
